@@ -1,5 +1,4 @@
-import Main_Task.MainTask;
-import Main_Task.Optional_Task_1;
+import Main_Task.*;
 import Сontrol.Tryparse;
 
 import java.io.BufferedReader;
@@ -48,7 +47,7 @@ public class Main
 
 
     private  static  void MainTaskStart() throws IOException {
-        System.out.println("Choose Task number 1-3\n"+"Main Task = 1\n"+"Optional Task 1 = 2\n"+"In progress = 3");
+        System.out.println("Choose Task number 1-3\n"+"Main Task = 1\n"+"Optional Task 1 = 2\n"+"Optional Task 2 = 3");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         boolean z =true;
         while (z)
@@ -73,7 +72,8 @@ public class Main
                         z = false;
                         break;
                     case 3:
-
+                        Optional_Task_2 op = new Optional_Task_2();
+                        op.StartMainTask();
                         z=false;
                         break;
 

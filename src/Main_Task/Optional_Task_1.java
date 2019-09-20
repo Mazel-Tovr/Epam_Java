@@ -70,19 +70,15 @@ public class Optional_Task_1
                         break;
                     case 2:
                          SecondTask();
-
                         break;
                     case 3:
                         ThirdTask();
-
                         break;
                     case 4:
                         FourthTask();
-
                         break;
                     case 5:
                         FifthTask();
-
                         break;
                     case 6:
                         SixthTask();
