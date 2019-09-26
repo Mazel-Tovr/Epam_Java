@@ -20,6 +20,7 @@ public class MainTask
 
 
     public void StartMainTask() throws IOException {
+
         System.out.println("Choose Task number 1-5");
         System.out.println("1.     Приветствовать любого пользователя при вводе его имени через командную строку.\n" +
                 "2.     Отобразить в окне консоли аргументы командной строки в обратном порядке.\n" +
