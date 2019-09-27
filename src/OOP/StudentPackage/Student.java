@@ -1,16 +1,8 @@
 package OOP.StudentPackage;
 
-enum Faculty
-{
-    Химии,
-    Строительства,
-    Инфорамтики,
-    Энергетики
-}
-
 public class Student
 {
-    private Long sudentId;
+    private Long studentId;
     private String name;
     private String surname;
     private String middleName;
@@ -19,12 +11,12 @@ public class Student
     private Long phone;
     private Faculty faculty;
     private Integer course;
-    private String group;
+    private Group group;
 
-    public Student(Long sudentId, String name, String surname, String middleName, String dateOfBirth, String address, Long phone, Faculty faculty, Integer  course, String group)
+    public Student(Long studentId, String name, String surname, String middleName, String dateOfBirth, String address, Long phone, Faculty faculty, Integer  course, Group group)
     {
-        if(sudentId < 0) throw new ExceptionInInitializerError();
-        this.sudentId = sudentId;
+        if(studentId < 0) throw new ExceptionInInitializerError();
+        this.studentId = studentId;
         this.name = name;
         this.surname = surname;
         this.middleName = middleName;
@@ -36,8 +28,8 @@ public class Student
         this.group = group;
     }
 
-    public Long getSudentId() {
-        return sudentId;
+    public Long getStudentId() {
+        return studentId;
     }
 
     public String getName() {
@@ -72,14 +64,14 @@ public class Student
         return course;
     }
 
-    public String getGroup() {
+    public Group getGroup() {
         return group;
     }
 
-    public void setSudentId(long sudentId)
+    public void setStudentId(long studentId)
     {
-        if(sudentId < 0) throw new ExceptionInInitializerError();
-        this.sudentId = sudentId;
+        if(studentId < 0) throw new ExceptionInInitializerError();
+        this.studentId = studentId;
     }
 
     public void setName(String name) {
@@ -114,7 +106,7 @@ public class Student
         this.course = course;
     }
 
-    public void setGroup(String group) {
+    public void setGroup(Group group) {
         this.group = group;
     }
 
@@ -122,7 +114,7 @@ public class Student
     public String toString()
     {
         return "Student{" +
-                "sudentId=" + sudentId +
+                "sudentId=" + studentId +
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", middleName='" + middleName + '\'' +

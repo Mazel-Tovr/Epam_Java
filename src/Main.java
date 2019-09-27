@@ -1,4 +1,5 @@
 import Main_Task.*;
+import OOP.RunOOP;
 import Сontrol.Tryparse;
 
 import java.io.BufferedReader;
@@ -16,7 +17,7 @@ public class Main
         while (z)
         {
             System.out.println("Choose Task number");
-            System.out.println("MAIN TASK = 1\n" + "In progress = 2\n"+"Exit = 0");
+            System.out.println("MAIN TASK = 1\n" + "OOP = 2\n"+"Exit = 0");
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             String a = reader.readLine();
             Integer s = Integer.MIN_VALUE;
@@ -34,7 +35,8 @@ public class Main
                    // z = false;
                     break;
                 case 2:
-
+                    RunOOP op = new RunOOP();
+                    op.startMain();
                    // z = false;
                     break;
                 default:
